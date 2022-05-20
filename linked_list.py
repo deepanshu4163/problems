@@ -1,6 +1,4 @@
 
-from secrets import choice
-
 
 class Node:
     def __init__(self, data):
