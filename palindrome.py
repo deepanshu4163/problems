@@ -24,7 +24,7 @@ Algorithm
 
 
 def IsPalindrome(num):
-    if num < 0:
+    if num < 0 or (num % 10 == 0 and num != 0):
         return False
 
     revertednum = 0
@@ -34,4 +34,4 @@ def IsPalindrome(num):
 
     return num == revertednum or num == revertednum // 10     #floor division to ignore middle digit
 
-print(IsPalindrome(11211))
+print(IsPalindrome(10))
